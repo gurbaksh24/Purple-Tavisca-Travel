@@ -1,0 +1,95 @@
+/*@charset 'utf-8'*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+nav {
+    background-color: #fff;
+    margin: 0px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+nav > ul > li > a {
+    color: #0000FF;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+.active {
+    background-color: royalblue;
+    color: white;
+}
+
+section {
+    display: flex;
+    height: 927px;
+    background-image: url("bg.png");
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.section-heading {
+    width: 80%;
+    background-color: white;
+    opacity: 0.8;
+    color: dodgerblue;
+    height: 4em;
+    padding-left: 20px;
+    display: flex;
+
+}
+
+.sec-heading-1 {
+    padding-top: 1px;
+}
+
+.top-nav {
+    border: 1px solid black;
+}
+
+.my-ltinerary {
+    float: right;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding-bottom: 34px;
+    padding-left: 45px;
+    padding-top: 34px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none
+}
+
+.name {
+    float: right;
+    padding-right: 14px;
+    font-size: 1em;
+    color: gray;
+    text-align: right;
+}
+
+.bottom-nav {
+    float: right;
+    padding-top: 65px;
+    position: relative;
+    left: 99px;
+}
+
+.bottom-nav > li > a {
+    text-decoration: none;
+    font-weight: 550;
+    color: blue;
+}
