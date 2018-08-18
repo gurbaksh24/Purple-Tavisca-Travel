@@ -4,6 +4,7 @@ body {
     padding: 0px;
     margin: 0px;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav ul li {
 }
 
 nav > ul > li > a {
-    color: #0000FF;
+    color: #3A7DB7;
     display: block;
     line-height: 2em;
     padding: 0.5em 0.5em;
@@ -30,31 +31,94 @@ nav > ul > li > a {
 }
 
 .active {
-    background-color: royalblue;
+    background-color: #3A7DB7;
     color: white;
 }
 
 section {
     display: flex;
+    flex-direction: column;
     height: 927px;
     background-image: url("bg.png");
-    justify-content: center;
+    background-repeat: no-repeat;
     padding-top: 50px;
 }
 
 .section-heading {
-    width: 80%;
+    width: 60%;
     background-color: white;
     opacity: 0.8;
-    color: dodgerblue;
+    color: #3A7DB7;
     height: 4em;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
-
+    justify-content: space-between;
+    align-self: center;
 }
 
 .sec-heading-1 {
-    padding-top: 1px;
+    font-size: 18pt;
+    font-weight: normal;
+
+}
+
+.sec-link {
+    align-self: center;
+    justify-content: space-between;
+}
+
+.search-tab {
+    width: 65%;
+    background-color: aliceblue;
+    align-self: center;
+    margin: 15px;
+}
+
+/* Style tab links */
+
+.tablink {
+    background-color: darkblue;
+    color: white;
+    float: left;
+    border: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    background-color: blue;
+}
+
+.inside-tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    background-color: blue;
+    border: solid;
+    border-bottom: 1px solid;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.flights {
+    color: black;
+    background-color: white;
+    padding: 60px 20px;
+    height: 100%;
+}
+
+.active {
+    background-color: white;
+    color: #777;
 }
 
 .top-nav {
@@ -63,7 +127,7 @@ section {
 
 .my-ltinerary {
     float: right;
-    background-color: cornflowerblue;
+    background-color: #3A7DB7;
     text-align: center;
     padding-bottom: 34px;
     padding-left: 45px;
@@ -75,8 +139,10 @@ section {
 
 .name {
     float: right;
-    padding-right: 14px;
+    padding-right: 20px;
     font-size: 1em;
+    position: relative;
+    bottom: 20px;
     color: gray;
     text-align: right;
 }
@@ -85,11 +151,59 @@ section {
     float: right;
     padding-top: 65px;
     position: relative;
-    left: 99px;
+    left: 110px;
 }
 
 .bottom-nav > li > a {
     text-decoration: none;
-    font-weight: 550;
-    color: blue;
+    font-size: 0.9em;
+    color: #3A7DB7;
+}
+
+footer {
+    background-color: #3A7DB7;
+    height: 250px;
+    display: flex;
+
+}
+
+.left-nav {
+    padding: inherit;
+    padding-top: 20px;
+    padding-left: 250px;
+}
+
+.left-nav > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-nav > ul {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.line {
+    float: left;
+}
+
+
+.right-nav {
+    padding: inherit;
+    padding-top: 20px;
+    padding-left: 450px;
+}
+
+.right-nav > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.right-nav > ul {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
 }
